@@ -1,5 +1,5 @@
 
-Import-Module .\solutionhelper.psm1 -Force -Verbose
+Import-Module "$PSSscriptRoot\solutionhelper.psm1" -Force -Verbose
 
 $solution = Get-CurrentSolution
 
