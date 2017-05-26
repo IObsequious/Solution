@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <DisableStandardFrameworkResolution>false</DisableStandardFrameworkResolution>
     <AssemblySearchPaths>
       {CandidateAssemblyFiles};
