@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <DisableStandardFrameworkResolution>false</DisableStandardFrameworkResolution>
     <AssemblySearchPaths>
