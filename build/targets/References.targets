@@ -126,7 +126,7 @@
   <Choose>
     <When Condition="'$(IncludeMEFV2References)' == 'true'">
       <ItemGroup>
-        <PackageReference Include="Microsoft.Composition" Version="1.0.27" />
+        <PackageReference Include="Microsoft.Composition" Version="1.0.30" />
       </ItemGroup>
     </When>
   </Choose>
