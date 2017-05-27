@@ -41,3 +41,23 @@ Function Get-CurrentSolution
 
     return @((Get-ChildItem "$PSScriptRoot\..\..\" -Filter *.sln))[0].FullName   
 }
+
+Function Get-DevEnvDir
+{
+    [CmdletBinding()]
+    param
+    (
+        [ValidateSet('15.0','14.0','12.0')]
+        [Parameter()]
+        [System.String] $TargetVersion
+    )
+
+    $Root = Get-VSLocation -TargetVersion $TargetVersion
+    return Join-Path -Path $Root -ChildPath 'common7\IDE'
+
+}
+
+Function Get-SolutionDir
+{
+    return [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\")
+}
