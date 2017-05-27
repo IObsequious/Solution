@@ -6,12 +6,14 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VisualStudioVersion>15.0</VisualStudioVersion>
     <MinimumVisualStudioVersion>$(VisualStudioVersion)</MinimumVisualStudioVersion>
     <RepositoryRootDirectory>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..\'))</RepositoryRootDirectory>
     <OutputPath>$(RepositoryRootDirectory)Binaries\$(Configuration)\$(MSBuildProjectName)\</OutputPath>
     <!--<BaseIntermediateOutputPath>$(RepositoryRootDirectory)Binaries\Obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>-->
     <IntermediateOutputPath>$(RepositoryRootDirectory)Binaries\Obj\$(MSBuildProjectName)\$(Configuration)\</IntermediateOutputPath>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    
   </PropertyGroup>
 
   <PropertyGroup>
