@@ -418,6 +418,10 @@ SOFTWARE.</LicenseFileText>
   <Choose>
     <When Condition="'$(IncludePowerShellEditorReferences)' == 'true'">
       <ItemGroup>
+        <Reference Include="System.Xaml" />
+        <Reference Include="WindowsBase" />
+        <Reference Include="PresentationCore" />
+        <Reference Include="PresentationFramework" />
         <Reference Include="System.Management" />
         <Reference Include="System.Management.Automation" />
         <Reference Include="Microsoft.Management.Infrastructure" />
@@ -541,6 +545,18 @@ SOFTWARE.</LicenseFileText>
         <Reference Include="Microsoft.VisualStudio.TextManager.Interop.12.0" />
         <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0" />
         <Reference Include="Microsoft.VisualStudio.TextManager.Interop.9.0" />
+      </ItemGroup>
+    </When>
+  </Choose>
+
+  <Choose>
+    <When Condition="'$(IncludeTextTemplatingReferences)'=='true'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.TextTemplating.$(VisualStudioVersion)" />
+        <Reference Include="Microsoft.VisualStudio.TextTemplating.VSHost.$(VisualStudioVersion)" />
+        <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.10.0" />
+        <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.11.0" />
+        <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.$(VisualStudioVersion)" />
       </ItemGroup>
     </When>
   </Choose>
