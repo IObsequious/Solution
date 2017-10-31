@@ -16,6 +16,15 @@ Copyright (c) Ollon, LLC. All rights reserved.
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
 
+  <!--                              -->
+  <!--   Nuget Minimum Capabilities -->
+  <!--                              -->
+  <ItemGroup>
+    <ProjectCapability Include="AssemblyReferences" />
+    <ProjectCapability Include="DeclaredSourceItems" />
+    <ProjectCapability Include="UserSourceItems" />
+  </ItemGroup>
+  
   <!--                         -->
   <!--   Legacy Frameworks     -->
   <!--                         -->
