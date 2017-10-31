@@ -25,6 +25,10 @@ Copyright (c) Ollon, LLC. All rights reserved.
     <ProjectCapability Include="UserSourceItems" />
   </ItemGroup>
   
+  <PropertyGroup>
+    <RuntimeIdentifiers Condition="'$(RuntimeIdentifiers)'==''">win</RuntimeIdentifiers>
+  </PropertyGroup>
+  
   <!--                         -->
   <!--   Legacy Frameworks     -->
   <!--                         -->
